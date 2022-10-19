@@ -9,10 +9,16 @@ import Projects from "../pages/Projects";
 // Don't know how to do resume because it's an onClick download
 // import Resume from '../pages/Resume';
 
+const mainStyle = {
+  main: {
+    backgroundColor: "lightblue",
+  },
+};
+
 const Main = () => {
   const component = <AboutMe />;
 
-  return <main>{component}</main>;
+  return <main style={mainStyle.main}>{component}</main>;
 };
 
 export default Main;

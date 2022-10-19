@@ -25,7 +25,7 @@ const aboutMeStyles = {
     border: "solid rgb(46, 94, 176) 5px",
     borderRadius: "50px",
     padding: "20px",
-    backgroundColor: "lightblue",
+    backgroundColor: "#fee4ff",
     marginLeft: "30px",
   },
   img: {
