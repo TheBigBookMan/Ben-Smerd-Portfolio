@@ -19,6 +19,7 @@ const aboutMeStyles = {
   aboutTitle: {
     fontSize: "2rem",
     margin: "10px 100px",
+    color: "rgb(18, 49, 101)",
   },
 };
 

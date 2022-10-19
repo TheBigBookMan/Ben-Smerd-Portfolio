@@ -5,7 +5,7 @@ const bioStyles = {
   bioContainer: {
     display: "flex",
     width: "900px",
-    height: "450px",
+    height: "460px",
     border: "solid rgb(46, 94, 176) 5px",
     borderRadius: "50px",
     padding: "20px",
@@ -16,7 +16,6 @@ const bioStyles = {
     display: "flex",
     flexDirection: "column",
     gap: "10px",
-    border: "solid 2px black",
   },
   img: {
     width: "300px",
@@ -30,6 +29,7 @@ const bioStyles = {
   },
   location: {
     fontStyle: "italic",
+    color: "#10c6ef",
   },
   bioText: {
     width: "400px",
@@ -38,13 +38,11 @@ const bioStyles = {
 
 const credentialStyles = {
   credentialsContainer: {
-    border: "solid 1px black",
     width: "80%",
     lineHeight: "30px",
   },
   education: {
     marginLeft: "10px",
-    border: "solid black 2px",
   },
   educationTitle: {
     color: "rgb(46, 94, 176)",
@@ -54,9 +52,10 @@ const credentialStyles = {
   },
   educationName: {
     fontStyle: "italic",
+    color: "#10c6ef",
   },
   educationText: {
-    fontWeight: "lighter",
+    letterSpacing: "1px",
   },
 };
 
@@ -83,11 +82,21 @@ const Bio = () => {
                 The University of Adelaide Bootcamp: 2022
               </h3>
               <p style={credentialStyles.educationText}>
-                - Main focus on the MERN stack- MongoDB, ExpressJS, ReactJS and
-                NodeJS. <br></br>- Understanding of fundamental web development
-                and software engineering concepts. <br></br>- Working
-                independently and collaboratively on studying and building
-                projects.
+                - MERN stack- MongoDB, ExpressJS, ReactJS and NodeJS. <br></br>-
+                Understanding of fundamental web development and software
+                engineering concepts. <br></br>- Working independently and
+                collaboratively on studying and building projects.
+              </p>
+            </li>
+            <li>
+              <h3 style={credentialStyles.educationName}>
+                RMIT- Masters of Justice & Criminology- 2019-2020:
+              </h3>
+              <p style={credentialStyles.educationText}>
+                - Thorough researching in relevant areas, such as Google,
+                Official Documentation, Books. <br></br>- Goal-orientated
+                achievements based on finishing academic work.
+                <br></br>- Curiosity to continuously learn and develop skills.
               </p>
             </li>
           </ul>
