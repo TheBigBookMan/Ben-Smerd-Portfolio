@@ -2,6 +2,7 @@
 import React from "react";
 import "../styles/Header.css";
 import Me from "../images/Me.jpg";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
         <img src={Me} alt="self-portrait" id="hero-portrait" />
         <h1 id="hero-name">Ben Smerd</h1>
       </div>
+      <Navigation />
     </header>
   );
 };
