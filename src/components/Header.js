@@ -13,6 +13,7 @@ const headerStyles = {
     height: "40px",
     padding: "20px",
     fontFamily: "Montserrat",
+    borderBottom: "solid 3px rgb(66, 117, 206)",
   },
   heroContainer: {
     display: "flex",

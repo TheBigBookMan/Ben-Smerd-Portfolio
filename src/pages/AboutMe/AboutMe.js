@@ -14,7 +14,6 @@ const aboutMeStyles = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    border: "solid 2px black",
   },
   aboutTitle: {
     fontSize: "2rem",
