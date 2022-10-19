@@ -21,7 +21,7 @@ const bioStyles = {
     width: "300px",
     height: "300px",
     borderRadius: "50px",
-    boxShadow: "0 0 2px 4px rgba(0, 0, 0, 0.2)",
+    boxShadow: "4px 4px 8px 3px rgba(0, 0, 0, 0.4)",
     objectFit: "cover",
   },
   name: {
