@@ -1,10 +1,9 @@
 // conatins the title of my name with the navigation bar in it
 import React from "react";
-// will have to change the style from stylesheet to inline style
-import "../styles/Header.css";
 import Me from "../images/Me.jpg";
 import Navigation from "./Navigation";
 
+// will have to make a utility function for checking window width/size for responsiveness
 const headerStyles = {
   headerContainer: {
     display: "flex",
