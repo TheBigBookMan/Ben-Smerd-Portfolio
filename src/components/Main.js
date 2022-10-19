@@ -1,5 +1,3 @@
-// the main body of the page where the pages will be rednered, so like a middle man
-
 // need an if else statement that will render the main body component
 
 // this will be deteremined by the state of what is clicked in the navigation passed through as props
@@ -14,7 +12,7 @@ import Projects from "../pages/Projects";
 const Main = () => {
   const component = <AboutMe />;
 
-  return <div>{component}</div>;
+  return <main>{component}</main>;
 };
 
 export default Main;

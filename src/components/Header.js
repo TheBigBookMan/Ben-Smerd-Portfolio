@@ -1,6 +1,6 @@
 // conatins the title of my name with the navigation bar in it
 import React from "react";
-import Me from "../images/Me.jpg";
+import close from "../images/close.jpg";
 import Navigation from "./Navigation";
 
 // will have to make a utility function for checking window width/size for responsiveness
@@ -24,6 +24,7 @@ const headerStyles = {
     borderRadius: "20px",
     border: "solid 1px rgb(66, 117, 206)",
     boxShadow: "1px 1px 0 0 rgba(66, 117, 206, 0.4)",
+    objectFit: "fill",
   },
   heroName: {
     margin: "10px",
@@ -36,7 +37,11 @@ const Header = () => {
   return (
     <header style={headerStyles.headerContainer}>
       <div style={headerStyles.heroContainer}>
-        <img src={Me} alt="self-portrait" style={headerStyles.heroPortrait} />
+        <img
+          src={close}
+          alt="self-portrait"
+          style={headerStyles.heroPortrait}
+        />
         <h1 style={headerStyles.heroName}>Ben Smerd</h1>
       </div>
       <Navigation />
