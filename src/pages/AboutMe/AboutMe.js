@@ -6,6 +6,7 @@
 
 import React from "react";
 import Bio from "./Bio";
+import Skills from "./Skills";
 
 // break off the bio stuff and put that into the bio module and import it back here as a component
 
@@ -14,6 +15,9 @@ const aboutMeStyles = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+  },
+  infoContainer: {
+    display: "flex",
   },
   aboutTitle: {
     fontSize: "2rem",
@@ -28,7 +32,10 @@ const AboutMe = () => {
   return (
     <div style={aboutMeStyles.aboutContainer}>
       <h1 style={aboutMeStyles.aboutTitle}>About Me</h1>
-      <Bio />
+      <div style={aboutMeStyles.infoContainer}>
+        <Bio />
+        <Skills />
+      </div>
     </div>
   );
 };
