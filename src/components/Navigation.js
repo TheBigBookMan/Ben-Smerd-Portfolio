@@ -3,7 +3,7 @@
 // navlinks need a onClick function rather than using href src ---- react rules
 
 import React from "react";
-
+// will have to change the style from stylesheet to inline style
 const Navigation = () => {
   return (
     <nav id="nav-container">
