@@ -25,6 +25,7 @@ const navigationStyles = {
   active: {
     color: "rgb(18, 49, 101)",
     textDecoration: "underline",
+    cursor: "pointer",
   },
 };
 
