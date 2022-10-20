@@ -50,24 +50,6 @@ const Form = () => {
 
   // need to put onChange prop which then hanles the e.target and value and sets it
 
-  const submitOrThanks = () => {
-    if (submission) {
-      return (
-        <button
-          className="submitBtn"
-          style={formStyles.submitBox}
-          type="submit"
-          name="submit"
-          onClick={submitThanks}
-        >
-          <h2 style={formStyles.formTitles}>Submit</h2>
-        </button>
-      );
-    } else {
-      return <h1 style={formStyles.formTitles}>Thank you!</h1>;
-    }
-  };
-
   return (
     <form style={formStyles.formContainer}>
       <label htmlFor="name">
@@ -112,7 +94,19 @@ const Form = () => {
           cols="30"
         ></textarea>
       </label>
-      {submitOrThanks()}
+      {submission ? (
+        <button
+          className="submitBtn"
+          style={formStyles.submitBox}
+          type="submit"
+          name="submit"
+          onClick={submitThanks}
+        >
+          <h2 style={formStyles.formTitles}>Submit</h2>
+        </button>
+      ) : (
+        <h1 style={formStyles.formTitles}>Thank you!</h1>
+      )}
     </form>
   );
 };
