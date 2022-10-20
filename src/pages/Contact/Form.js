@@ -11,7 +11,7 @@ const Form = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [error, setError] = useState(false);
+  const [error, setError] = useState("");
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -30,20 +30,21 @@ const Form = () => {
   const submitForm = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email)) {
-      setError(true);
+    if (!userName || !message) {
+      setError("Missing input");
       return;
     }
 
-    if (!userName || !email || !message) {
+    if (!validateEmail(email)) {
+      setError("Incorrect email format");
       return;
-    } else {
-      setUserName("");
-      setEmail("");
-      setMessage("");
-      setSubmission(false);
-      setError(false);
     }
+
+    setUserName("");
+    setEmail("");
+    setMessage("");
+    setSubmission(false);
+    setError("");
   };
 
   return (
@@ -106,7 +107,7 @@ const Form = () => {
       ) : (
         <h1 style={formStyles.formTitles}>Thank you!</h1>
       )}
-      {error && <h3>Incorrect email format</h3>}
+      {error}
     </form>
   );
 };
