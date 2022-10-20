@@ -37,19 +37,19 @@ const inputMessage = document.querySelector(".inputMessage");
 // will need a regex for the match email so it actually works
 // On form page use state to determine if person has submitted and then can use that to determine if button or thank you
 
-const submitThanks = (e) => {
-  e.preventDefault();
-  console.log(inputName.value);
-  if (inputName.value && inputEmail.value && inputMessage.value) {
-    console.log("all fine");
-  } else {
-    console.log("no good");
-  }
-};
-
 const Form = () => {
-  const [submission, setSubmission] = useState(false);
+  const [submission, setSubmission] = useState(true);
   let submitOrThanks;
+
+  const submitThanks = (e) => {
+    // e.preventDefault();
+    console.log(inputName.value);
+    if (inputName.value && inputEmail.value && inputMessage.value) {
+      setSubmission(false);
+    } else {
+      setSubmission(true);
+    }
+  };
 
   if (submission) {
     submitOrThanks = (

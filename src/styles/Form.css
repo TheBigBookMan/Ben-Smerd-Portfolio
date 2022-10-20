@@ -1,3 +1,7 @@
 .submitBtn:hover {
-  transform: scale(1.05);
+  background-color: #d8d0d0f6;
+}
+
+.submitBtn:active {
+  transform: scale(0.96);
 }
