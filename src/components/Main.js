@@ -4,7 +4,7 @@
 
 import React from "react";
 import AboutMe from "../pages/AboutMe/AboutMe";
-import Contact from "../pages/Contact";
+import Contact from "../pages/Contact/Contact";
 import Projects from "../pages/Projects";
 // Don't know how to do resume because it's an onClick download
 // import Resume from '../pages/Resume';
@@ -18,7 +18,7 @@ const mainStyle = {
 };
 
 const Main = () => {
-  const component = <AboutMe />;
+  const component = <Contact />;
 
   return <main style={mainStyle.main}>{component}</main>;
 };
