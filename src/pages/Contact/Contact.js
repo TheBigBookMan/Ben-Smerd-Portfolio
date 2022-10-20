@@ -1,5 +1,7 @@
 // form with input for users name, email and required message and submit button
 
+// got a lot of room on right so could add in a game or something intereting with animation
+
 import React from "react";
 import Form from "./Form";
 
@@ -11,7 +13,7 @@ const contactStyles = {
   },
   formContainer: {
     display: "flex",
-    width: "900px",
+    width: "500px",
     height: "470px",
     border: "solid rgb(46, 94, 176) 5px",
     borderRadius: "50px",
