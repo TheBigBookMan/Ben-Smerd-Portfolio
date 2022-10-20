@@ -18,7 +18,7 @@ const mainStyle = {
 };
 
 const Main = () => {
-  const component = <Contact />;
+  const component = <AboutMe />;
 
   return <main style={mainStyle.main}>{component}</main>;
 };

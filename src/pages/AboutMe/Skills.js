@@ -8,12 +8,12 @@ const Skills = () => {
       <h3 style={skillsStyles.skillsName}>Technologies</h3>
       <p style={skillsStyles.skillsText}>
         MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), ES6 Javascript,
-        JQuery, MySQL, TailwindCSS, Bootstrap, GitHub, GitLab, Git, Heroku and
-        more.
+        JQuery, MySQL, GraphQL, TailwindCSS, Bootstrap, GitHub, GitLab, Git,
+        Heroku and more.
       </p>
       <h3 style={skillsStyles.skillsName}>Concepts</h3>
       <p style={skillsStyles.skillsText}>
-        Object Oriented Programming, Progressive Web Apps, Responsive Design,
+        OOP, PWA, Lighthouse Audits, Testing Frameworks, Responsive Design,
         ORM/ODM, CRUD, MVC and others.
       </p>
       <h3 style={skillsStyles.skillsName}>Soft Skills</h3>
