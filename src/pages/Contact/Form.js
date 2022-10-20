@@ -1,44 +1,17 @@
 import React, { useState } from "react";
-import "../../styles/Form.css";
+import "./styles/Form.css";
 import validateEmail from "./utils";
-
-const formStyles = {
-  formContainer: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "10px",
-    marginLeft: "20px",
-  },
-  inputBox: {
-    height: "30px",
-    fontSize: "1.2rem",
-    paddingLeft: "5px",
-  },
-  messageBox: {
-    fontSize: "1.2rem",
-    paddingLeft: "5px",
-  },
-  submitBox: {
-    height: "60px",
-    width: "150px",
-    borderRadius: "30px",
-    boxShadow: "1px 1px 2px 1px rgba(0, 0, 0, 0.5)",
-    cursor: "pointer",
-  },
-  formTitles: {
-    color: "rgb(46, 94, 176)",
-  },
-};
+import { formStyles } from "./styles/FormInline";
 
 // could make the submit button do some antimation after submitting the form
 // could put in an automatic sender to my email when click submit button
-// will need a regex for the match email so it actually works
 
 const Form = () => {
   const [submission, setSubmission] = useState(true);
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState(false);
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -58,7 +31,7 @@ const Form = () => {
     e.preventDefault();
 
     if (!validateEmail(email)) {
-      alert("Incorrect email");
+      setError(true);
       return;
     }
 
@@ -69,6 +42,7 @@ const Form = () => {
       setEmail("");
       setMessage("");
       setSubmission(false);
+      setError(false);
     }
   };
 
@@ -132,6 +106,7 @@ const Form = () => {
       ) : (
         <h1 style={formStyles.formTitles}>Thank you!</h1>
       )}
+      {error && <h3>Incorrect email format</h3>}
     </form>
   );
 };
