@@ -23,9 +23,9 @@ const headerStyles = {
     height: "50px",
     margin: "10px",
     borderRadius: "20px",
-    border: "solid 1px rgb(66, 117, 206)",
-    boxShadow: "1px 1px 0 0 rgba(66, 117, 206, 0.4)",
+    boxShadow: "1px 1px 8px 1px rgba(0,0,0, 0.4)",
     objectFit: "fill",
+    cursor: "pointer",
   },
   heroName: {
     margin: "10px",
