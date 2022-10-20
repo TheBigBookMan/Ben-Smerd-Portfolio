@@ -29,9 +29,6 @@ const formStyles = {
   },
 };
 
-const inputName = document.querySelector(".inputName");
-const inputEmail = document.querySelector(".inputEmail");
-const inputMessage = document.querySelector(".inputMessage");
 // could make the submit button do some antimation after submitting the form
 // could put in an automatic sender to my email when click submit button
 // will need a regex for the match email so it actually works
@@ -39,33 +36,37 @@ const inputMessage = document.querySelector(".inputMessage");
 
 const Form = () => {
   const [submission, setSubmission] = useState(true);
-  let submitOrThanks;
 
   const submitThanks = (e) => {
-    // e.preventDefault();
+    const inputName = e.target.name;
     console.log(inputName.value);
-    if (inputName.value && inputEmail.value && inputMessage.value) {
-      setSubmission(false);
-    } else {
-      setSubmission(true);
-    }
+    e.preventDefault();
+    // if (inputName.value && inputEmail.value && inputMessage.value) {
+    //   setSubmission(false);
+    // } else {
+    //   setSubmission(true);
+    // }
   };
 
-  if (submission) {
-    submitOrThanks = (
-      <button
-        className="submitBtn"
-        style={formStyles.submitBox}
-        type="submit"
-        name="submit"
-        onClick={submitThanks}
-      >
-        <h2 style={formStyles.formTitles}>Submit</h2>
-      </button>
-    );
-  } else {
-    submitOrThanks = <h1 style={formStyles.formTitles}>Thank you!</h1>;
-  }
+  // need to put onChange prop which then hanles the e.target and value and sets it
+
+  const submitOrThanks = () => {
+    if (submission) {
+      return (
+        <button
+          className="submitBtn"
+          style={formStyles.submitBox}
+          type="submit"
+          name="submit"
+          onClick={submitThanks}
+        >
+          <h2 style={formStyles.formTitles}>Submit</h2>
+        </button>
+      );
+    } else {
+      return <h1 style={formStyles.formTitles}>Thank you!</h1>;
+    }
+  };
 
   return (
     <form style={formStyles.formContainer}>
@@ -75,6 +76,7 @@ const Form = () => {
         <input
           className="inputName"
           style={formStyles.inputBox}
+          value=""
           type="text"
           placeholder="Your Name"
           name="name"
@@ -88,6 +90,7 @@ const Form = () => {
         <input
           className="inputEmail"
           style={formStyles.inputBox}
+          defaultValue=""
           type="text"
           placeholder="Your Email"
           name="email"
@@ -101,6 +104,7 @@ const Form = () => {
         <textarea
           className="inputMessage"
           style={formStyles.messageBox}
+          defaultValue=""
           placeholder="Enter your message"
           name="message"
           required
@@ -108,7 +112,7 @@ const Form = () => {
           cols="30"
         ></textarea>
       </label>
-      {submitOrThanks}
+      {submitOrThanks()}
     </form>
   );
 };
