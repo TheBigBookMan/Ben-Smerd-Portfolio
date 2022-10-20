@@ -10,7 +10,7 @@ const headerStyles = {
     justifyContent: "space-between",
     alignItems: "center",
     backgroundColor: "lightblue",
-    height: "40px",
+    height: "30px",
     padding: "20px",
     fontFamily: "Montserrat",
     borderBottom: "solid 3px rgb(66, 117, 206)",

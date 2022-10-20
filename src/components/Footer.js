@@ -4,7 +4,7 @@ import React from "react";
 
 const footerStyles = {
   iconContainer: {
-    height: "51px",
+    height: "61px",
     backgroundColor: "lightblue",
     display: "flex",
     justifyContent: "center",
