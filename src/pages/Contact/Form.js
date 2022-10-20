@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/Form.css";
+import validateEmail from "./utils";
 
 const formStyles = {
   formContainer: {
@@ -32,36 +33,58 @@ const formStyles = {
 // could make the submit button do some antimation after submitting the form
 // could put in an automatic sender to my email when click submit button
 // will need a regex for the match email so it actually works
-// On form page use state to determine if person has submitted and then can use that to determine if button or thank you
 
 const Form = () => {
   const [submission, setSubmission] = useState(true);
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const submitThanks = (e) => {
-    const inputName = e.target.name;
-    console.log(inputName.value);
-    e.preventDefault();
-    // if (inputName.value && inputEmail.value && inputMessage.value) {
-    //   setSubmission(false);
-    // } else {
-    //   setSubmission(true);
-    // }
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputValue = target.value;
+    const inputType = target.name;
+
+    if (inputType === "username") {
+      setUserName(inputValue);
+    } else if (inputType === "email") {
+      setEmail(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
   };
 
-  // need to put onChange prop which then hanles the e.target and value and sets it
+  const submitForm = (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(email)) {
+      alert("Incorrect email");
+      return;
+    }
+
+    if (!userName || !email || !message) {
+      return;
+    } else {
+      setUserName("");
+      setEmail("");
+      setMessage("");
+      setSubmission(false);
+    }
+  };
 
   return (
     <form style={formStyles.formContainer}>
-      <label htmlFor="name">
+      <label htmlFor="username">
         <h2 style={formStyles.formTitles}>Name:</h2>
         <br></br>
         <input
           className="inputName"
           style={formStyles.inputBox}
-          value=""
+          value={userName}
+          onChange={handleInputChange}
           type="text"
           placeholder="Your Name"
-          name="name"
+          name="username"
           required
         ></input>
       </label>
@@ -72,8 +95,9 @@ const Form = () => {
         <input
           className="inputEmail"
           style={formStyles.inputBox}
-          defaultValue=""
-          type="text"
+          value={email}
+          onChange={handleInputChange}
+          type="email"
           placeholder="Your Email"
           name="email"
           required
@@ -86,7 +110,8 @@ const Form = () => {
         <textarea
           className="inputMessage"
           style={formStyles.messageBox}
-          defaultValue=""
+          value={message}
+          onChange={handleInputChange}
           placeholder="Enter your message"
           name="message"
           required
@@ -100,7 +125,7 @@ const Form = () => {
           style={formStyles.submitBox}
           type="submit"
           name="submit"
-          onClick={submitThanks}
+          onClick={submitForm}
         >
           <h2 style={formStyles.formTitles}>Submit</h2>
         </button>
