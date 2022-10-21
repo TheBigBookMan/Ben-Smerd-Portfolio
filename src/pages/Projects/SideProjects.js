@@ -11,35 +11,70 @@ const SideProjects = () => {
       </h2>
       <ul style={side.projectList}>
         <li>
-          <h4 style={side.projectName}>YouTrailer</h4>
+          <h4
+            onClick={() =>
+              window.open("https://github.com/carolinemae/YouTrailer")
+            }
+            style={side.projectName}
+          >
+            YouTrailer
+          </h4>
           <small style={side.sideProjectInfo}>
             Collaborative entertainment app where users can search by title or
             criteria and view the trailer.
           </small>
         </li>
         <li>
-          <h4 style={side.projectName}>Cafe Template</h4>
+          <h4
+            onClick={() =>
+              window.open("https://github.com/TheBigBookMan/Cafe-template")
+            }
+            style={side.projectName}
+          >
+            Cafe Template
+          </h4>
           <small style={side.sideProjectInfo}>
             Simple template for a cafe web design, built with vanilla
             Javascript.
           </small>
         </li>
         <li>
-          <h4 style={side.projectName}>Weather App</h4>
+          <h4
+            onClick={() =>
+              window.open("https://github.com/TheBigBookMan/Weather-Dashboard")
+            }
+            style={side.projectName}
+          >
+            Weather App
+          </h4>
           <small style={side.sideProjectInfo}>
             Third party API to show the user the weather for the city they
             searched and the next 5 days with history storage, using Javascript.
           </small>
         </li>
         <li>
-          <h4 style={side.projectName}>Work Day Schedular</h4>
+          <h4
+            onClick={() =>
+              window.open("https://github.com/TheBigBookMan/Work_Day_Scheduler")
+            }
+            style={side.projectName}
+          >
+            Work Day Schedular
+          </h4>
           <small style={side.sideProjectInfo}>
             Javascript application where user inputs, edits, deletes tasks to be
             scheduled with time tracker.
           </small>
         </li>
         <li>
-          <h4 style={side.projectName}>ReadME Generator</h4>
+          <h4
+            onClick={() =>
+              window.open("https://github.com/TheBigBookMan/ReadME-Generator")
+            }
+            style={side.projectName}
+          >
+            ReadME Generator
+          </h4>
           <small style={side.sideProjectInfo}>
             NodeJS command line will prompt users with questions that are
             relevant to their structure and content of their README. A README

@@ -22,5 +22,6 @@ export const sideProjectStyles = {
   projectName: {
     fontStyle: "italic",
     color: "#10c6ef",
+    cursor: "pointer",
   },
 };
