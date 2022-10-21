@@ -6,15 +6,18 @@ export const sideProjectStyles = {
     border: "solid rgb(46, 94, 176) 5px",
     borderRadius: "50px",
     padding: "20px",
-    lineHeight: "30px",
+    lineHeight: "20px",
     backgroundColor: "#fee4ff",
   },
   projectTitle: {
     color: "rgb(46, 94, 176)",
+    marginBottom: "10px",
   },
   projectList: {
     listStyleType: "none",
-    gap: "5px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "10px",
   },
   projectName: {
     fontStyle: "italic",
