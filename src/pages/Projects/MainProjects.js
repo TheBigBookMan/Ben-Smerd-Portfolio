@@ -62,9 +62,11 @@ const MainProjects = () => {
           <h3 style={main.projectsTitle}>Empty Your Fridge (Coming soon...)</h3>
           <div style={main.projectInfoContainer}>
             <small>
-              This is a crypto coin app that uses Javascript, NodeJS, MySql,
-              ExpressJS and a coingeko crypto third party API. I worked
-              collaboratively and mainly worked on the backend.
+              I am currently building a ReactJS client-side application where
+              users can input ingredients that they have laying around at home
+              and select the type of meal they want and then multiple recipes
+              will be presented for them to choose for a meal to empty their
+              fridge!
             </small>
             <img
               src={EmptyYourFridge}
