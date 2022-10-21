@@ -2,7 +2,7 @@ export const mainProjectStyles = {
   mainProjectsDisplay: {
     display: "flex",
     flexDirection: "column",
-    width: "900px",
+    width: "1000px",
     height: "470px",
     border: "solid rgb(46, 94, 176) 5px",
     borderRadius: "50px",
@@ -14,7 +14,7 @@ export const mainProjectStyles = {
     color: "rgb(46, 94, 176)",
   },
   projectContainer: {
-    maxWidth: "900px",
+    maxWidth: "1000px",
     height: "100%",
     listStyleType: "none",
     display: "flex",
@@ -22,7 +22,7 @@ export const mainProjectStyles = {
     justifyContent: "space-between",
   },
   project: {
-    width: "440px",
+    width: "490px",
     height: "50%",
   },
   projectsTitle: {

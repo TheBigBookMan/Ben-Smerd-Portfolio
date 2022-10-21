@@ -28,9 +28,10 @@ const MainProjects = () => {
           <h3 style={main.projectsTitle}>Employee Tracker</h3>
           <div style={main.projectInfoContainer}>
             <small>
-              This is a crypto coin app that uses Javascript, NodeJS, MySql,
-              ExpressJS and a coingeko crypto third party API. I worked
-              collaboratively and mainly worked on the backend.
+              This is a solo backend application created with NodeJS, ExpressJS
+              and MySql. A server-side application that allows the user to view
+              information about a workplace through querying the database. They
+              can query about departments, roles and employees information.
             </small>
             <img
               src={EmployeeTracker}
