@@ -14,7 +14,6 @@ export const mainProjectStyles = {
     color: "rgb(46, 94, 176)",
   },
   projectContainer: {
-    border: "green solid 3px",
     maxWidth: "900px",
     height: "100%",
     listStyleType: "none",
@@ -23,16 +22,15 @@ export const mainProjectStyles = {
     justifyContent: "space-between",
   },
   project: {
-    border: "solid black 3px",
     width: "440px",
     height: "50%",
   },
   projectsTitle: {
     fontStyle: "italic",
     color: "#10c6ef",
+    marginBottom: "8px",
   },
   projectInfoContainer: {
-    // border: "red solid 2px",
     width: "100%",
     display: "flex",
     letterSpacing: "1px",
@@ -41,5 +39,8 @@ export const mainProjectStyles = {
   image: {
     width: "250px",
     height: "150px",
+    border: "solid 2px #10c6ef",
+    boxShadow: "2px 2px 5px 1px rgba(0,0,0,0.5)",
+    borderRadius: "20px",
   },
 };
