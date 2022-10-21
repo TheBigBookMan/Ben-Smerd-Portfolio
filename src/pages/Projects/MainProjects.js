@@ -11,7 +11,10 @@ import { mainProjectStyles as main } from "./styles/MainStyles";
 const MainProjects = () => {
   return (
     <div style={main.mainProjectsDisplay}>
-      <h2 style={main.projectTitle}>Main Projects</h2>
+      <h2 style={main.projectTitle}>
+        Main Projects-{" "}
+        <small>Click image for GitHub, deployed links in ReadME</small>
+      </h2>
       <ul style={main.projectContainer}>
         <li style={main.project}>
           <h3 style={main.projectsTitle}>KryptoHack</h3>
@@ -22,7 +25,14 @@ const MainProjects = () => {
               collaboratively in a team as project manager and mainly worked on
               the database, routes and logic.
             </small>
-            <img src={KryptoHack} alt="KryptoHack" style={main.image} />
+            <img
+              onClick={() =>
+                window.open("https://github.com/Canon70D/KryptoHack")
+              }
+              src={KryptoHack}
+              alt="KryptoHack"
+              style={main.image}
+            />
           </div>
         </li>
         <li style={main.project}>
@@ -35,6 +45,9 @@ const MainProjects = () => {
               departments, roles and employees information.
             </small>
             <img
+              onClick={() =>
+                window.open("https://github.com/TheBigBookMan/Employee-Tracker")
+              }
               src={EmployeeTracker}
               alt="EmployeeTracker"
               style={main.image}
@@ -52,6 +65,11 @@ const MainProjects = () => {
               employees.
             </small>
             <img
+              onClick={() =>
+                window.open(
+                  "https://github.com/TheBigBookMan/Team-Profile-Generator"
+                )
+              }
               src={TeamProfileGenerator}
               alt="TeamProfileGenerator"
               style={main.image}

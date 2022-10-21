@@ -45,9 +45,9 @@ export const mainProjectStyles = {
     border: "solid 2px #10c6ef",
     boxShadow: "2px 2px 5px 1px rgba(0,0,0,0.5)",
     borderRadius: "20px",
+    cursor: "pointer",
   },
   projectText: {
     lineHeight: "20px",
   },
-  employeeTracker: {},
 };

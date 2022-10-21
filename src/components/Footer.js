@@ -17,8 +17,6 @@ const footerStyles = {
   },
 };
 
-const openLink = (url) => {};
-
 const Footer = () => {
   return (
     <footer>
