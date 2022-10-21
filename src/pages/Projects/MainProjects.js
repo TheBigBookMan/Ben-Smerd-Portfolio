@@ -19,7 +19,8 @@ const MainProjects = () => {
             <small>
               This is a crypto coin app that uses Javascript, NodeJS, MySql,
               ExpressJS and a coingeko crypto third party API. I worked
-              collaboratively and mainly worked on the backend.
+              collaboratively in a team as project manager and mainly worked on
+              the database, routes and logic.
             </small>
             <img src={KryptoHack} alt="KryptoHack" style={main.image} />
           </div>
@@ -44,9 +45,11 @@ const MainProjects = () => {
           <h3 style={main.projectsTitle}>Team Profile Generator</h3>
           <div style={main.projectInfoContainer}>
             <small>
-              This is a crypto coin app that uses Javascript, NodeJS, MySql,
-              ExpressJS and a coingeko crypto third party API. I worked
-              collaboratively and mainly worked on the backend.
+              Using NodeJS and Javascript, he user will be prompted with
+              inputting information about their employees and the program will
+              create a HTML and CSS file with the information. The user will be
+              able to interact with information such as email and github
+              accounts for easy access to contacting the employees.
             </small>
             <img
               src={TeamProfileGenerator}
