@@ -1,8 +1,7 @@
 // after submission add in a home "splash" page with like a game on it or something cool
-// will probably need state info about what section is selected and then that's sent as props to main
-// navlinks need a onClick function rather than using href src ---- react rules
 
 import React from "react";
+import "../styles/Navigation.css";
 
 // will have to make a utility function for checking window width/size for responsiveness
 const navigationStyles = {
@@ -22,22 +21,33 @@ const navigationStyles = {
     textShadow: "2px 2px 2px rgba(0,0,0,0.1)",
     color: "rgb(46, 94, 176)",
   },
-  active: {
-    color: "rgb(18, 49, 101)",
-    textDecoration: "underline",
-    cursor: "pointer",
-  },
 };
 
-const Navigation = () => {
+const Navigation = ({ pageSelected, handlePageChange }) => {
   return (
     <nav style={navigationStyles.navContainer}>
       <ul style={navigationStyles.navList}>
-        <li style={(navigationStyles.navItem, navigationStyles.active)}>
+        <li
+          onClick={() => handlePageChange("AboutMe")}
+          className={pageSelected === "AboutMe" ? "active" : ""}
+          style={navigationStyles.navItem}
+        >
           About Me
         </li>
-        <li style={navigationStyles.navItem}>Projects</li>
-        <li style={navigationStyles.navItem}>Contact</li>
+        <li
+          onClick={() => handlePageChange("Projects")}
+          className={pageSelected === "Projects" ? "active" : ""}
+          style={navigationStyles.navItem}
+        >
+          Projects
+        </li>
+        <li
+          onClick={() => handlePageChange("Contact")}
+          className={pageSelected === "Contact" ? "active" : ""}
+          style={navigationStyles.navItem}
+        >
+          Contact
+        </li>
         <li style={navigationStyles.navItem}>Resume</li>
       </ul>
     </nav>

@@ -1,0 +1,6 @@
+.active {
+  color: rgb(18, 49, 101);
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bolder;
+}

@@ -1,8 +1,6 @@
 import React from "react";
 import { sideProjectStyles as side } from "./styles/SideStyles";
 
-// add in github link on clicking the name title
-
 const SideProjects = () => {
   return (
     <div style={side.sideProjectContainer}>
