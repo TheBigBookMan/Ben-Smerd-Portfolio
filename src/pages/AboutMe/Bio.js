@@ -1,30 +1,33 @@
 import React from "react";
 import Me from "../../images/Me.jpg";
-import { bioStyles, credentialStyles } from "./styles/BioStyles";
+import {
+  bioStyles as bio,
+  credentialStyles as credentials,
+} from "./styles/BioStyles";
 
 const Bio = () => {
   return (
-    <div style={bioStyles.bioContainer}>
-      <div style={bioStyles.bioInfo}>
-        <img src={Me} alt="me-portrait" style={bioStyles.img} />
-        <h1 style={bioStyles.name}>
+    <div style={bio.bioContainer}>
+      <div style={bio.bioInfo}>
+        <img src={Me} alt="me-portrait" style={bio.img} />
+        <h1 style={bio.name}>
           Ben Smerd <small>(Smerdy)</small>
         </h1>
-        <h3 style={bioStyles.location}>Adelaide, South Australia</h3>
-        <p style={bioStyles.bioText}>
+        <h3 style={bio.location}>Adelaide, South Australia</h3>
+        <p style={bio.bioText}>
           27 year old Full-Stack Web Developer graduated from Coding Bootcamp in
           2022, looking for work.
         </p>
       </div>
-      <div style={credentialStyles.credentialsContainer}>
-        <div style={credentialStyles.education}>
-          <h2 style={credentialStyles.educationTitle}>Education</h2>
-          <ul style={credentialStyles.educationList}>
+      <div style={credentials.credentialsContainer}>
+        <div style={credentials.education}>
+          <h2 style={credentials.educationTitle}>Education</h2>
+          <ul style={credentials.educationList}>
             <li>
-              <h3 style={credentialStyles.educationName}>
+              <h3 style={credentials.educationName}>
                 The University of Adelaide Bootcamp: 2022
               </h3>
-              <p style={credentialStyles.educationText}>
+              <p style={credentials.educationText}>
                 - MERN stack- MongoDB, ExpressJS, ReactJS and NodeJS. <br></br>-
                 Understanding of fundamental web development and software
                 engineering concepts. <br></br>- Working independently and
@@ -32,10 +35,10 @@ const Bio = () => {
               </p>
             </li>
             <li>
-              <h3 style={credentialStyles.educationName}>
+              <h3 style={credentials.educationName}>
                 RMIT- Masters of Justice & Criminology- 2019-2020:
               </h3>
-              <p style={credentialStyles.educationText}>
+              <p style={credentials.educationText}>
                 - Thorough researching in relevant areas, such as Google,
                 Official Documentation, Books. <br></br>- Goal-orientated
                 achievements based on finishing academic work.
