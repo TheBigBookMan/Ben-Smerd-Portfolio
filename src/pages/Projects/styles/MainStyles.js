@@ -13,6 +13,7 @@ export const mainProjectStyles = {
   projectTitle: {
     color: "rgb(46, 94, 176)",
     marginTop: "-5px",
+    marginBottom: "5px",
   },
   projectContainer: {
     maxWidth: "1000px",
@@ -29,7 +30,7 @@ export const mainProjectStyles = {
   projectsTitle: {
     fontStyle: "italic",
     color: "#10c6ef",
-    marginBottom: "4px",
+    marginBottom: "6px",
     marginTop: "-5px",
   },
   projectInfoContainer: {
@@ -45,4 +46,8 @@ export const mainProjectStyles = {
     boxShadow: "2px 2px 5px 1px rgba(0,0,0,0.5)",
     borderRadius: "20px",
   },
+  projectText: {
+    lineHeight: "20px",
+  },
+  employeeTracker: {},
 };

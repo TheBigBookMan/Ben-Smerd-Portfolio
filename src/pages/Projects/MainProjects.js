@@ -16,7 +16,7 @@ const MainProjects = () => {
         <li style={main.project}>
           <h3 style={main.projectsTitle}>KryptoHack</h3>
           <div style={main.projectInfoContainer}>
-            <small>
+            <small style={main.projectText}>
               This is a crypto coin app that uses Javascript, NodeJS, MySql,
               ExpressJS and a coingeko crypto third party API. I worked
               collaboratively in a team as project manager and mainly worked on
@@ -28,11 +28,11 @@ const MainProjects = () => {
         <li style={main.project}>
           <h3 style={main.projectsTitle}>Employee Tracker</h3>
           <div style={main.projectInfoContainer}>
-            <small>
-              This is a solo backend application created with NodeJS, ExpressJS
-              and MySql. A server-side application that allows the user to view
-              information about a workplace through querying the database. They
-              can query about departments, roles and employees information.
+            <small style={main.projectText}>
+              Backend application I created with NodeJS, ExpressJS and MySql. A
+              server-side app that allows the user to view information about a
+              workplace through querying the database. They can query about
+              departments, roles and employees information.
             </small>
             <img
               src={EmployeeTracker}
@@ -44,12 +44,12 @@ const MainProjects = () => {
         <li style={main.project}>
           <h3 style={main.projectsTitle}>Team Profile Generator</h3>
           <div style={main.projectInfoContainer}>
-            <small>
-              Using NodeJS and Javascript, he user will be prompted with
-              inputting information about their employees and the program will
-              create a HTML and CSS file with the information. The user will be
-              able to interact with information such as email and github
-              accounts for easy access to contacting the employees.
+            <small style={main.projectText}>
+              Using NodeJS and Javascript, the user inputs details about their
+              employees and a HTML and CSS file with the information will be
+              created. The user will be able to interact with information such
+              as email and github accounts for easy access to contacting the
+              employees.
             </small>
             <img
               src={TeamProfileGenerator}
@@ -61,7 +61,7 @@ const MainProjects = () => {
         <li style={main.project}>
           <h3 style={main.projectsTitle}>Empty Your Fridge (Coming soon...)</h3>
           <div style={main.projectInfoContainer}>
-            <small>
+            <small style={main.projectText}>
               I am currently building a ReactJS client-side application where
               users can input ingredients that they have laying around at home
               and select the type of meal they want and then multiple recipes

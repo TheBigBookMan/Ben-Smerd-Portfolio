@@ -15,13 +15,19 @@ const projectStyles = {
     margin: "10px 100px",
     color: "rgb(18, 49, 101)",
   },
+  display: {
+    display: "flex",
+  },
 };
 
 const Projects = () => {
   return (
     <div style={projectStyles.projectsContainer}>
       <h1 style={projectStyles.projectsTitle}>Projects</h1>
-      <MainProjects />
+      <div style={projectStyles.display}>
+        <MainProjects />
+        <SideProjects />
+      </div>
     </div>
   );
 };
