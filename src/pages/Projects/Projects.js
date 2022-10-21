@@ -15,23 +15,13 @@ const projectStyles = {
     margin: "10px 100px",
     color: "rgb(18, 49, 101)",
   },
-  projectsDisplay: {
-    display: "flex",
-    width: "900px",
-    height: "470px",
-    border: "solid rgb(46, 94, 176) 5px",
-    borderRadius: "50px",
-    padding: "20px",
-    backgroundColor: "#fee4ff",
-    marginLeft: "30px",
-  },
 };
 
 const Projects = () => {
   return (
     <div style={projectStyles.projectsContainer}>
       <h1 style={projectStyles.projectsTitle}>Projects</h1>
-      <div style={projectStyles.projectsDisplay}></div>
+      <MainProjects />
     </div>
   );
 };

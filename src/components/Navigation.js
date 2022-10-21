@@ -1,4 +1,4 @@
-// has an about me(home), projects, contact and resume
+// after submission add in a home "splash" page with like a game on it or something cool
 // will probably need state info about what section is selected and then that's sent as props to main
 // navlinks need a onClick function rather than using href src ---- react rules
 
