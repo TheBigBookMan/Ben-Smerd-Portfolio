@@ -12,6 +12,7 @@ export const mainProjectStyles = {
   },
   projectTitle: {
     color: "rgb(46, 94, 176)",
+    marginTop: "-5px",
   },
   projectContainer: {
     maxWidth: "1000px",
@@ -28,13 +29,14 @@ export const mainProjectStyles = {
   projectsTitle: {
     fontStyle: "italic",
     color: "#10c6ef",
-    marginBottom: "8px",
+    marginBottom: "4px",
+    marginTop: "-5px",
   },
   projectInfoContainer: {
     width: "100%",
     display: "flex",
     letterSpacing: "1px",
-    gap: "5px",
+    gap: "2px",
   },
   image: {
     width: "250px",
