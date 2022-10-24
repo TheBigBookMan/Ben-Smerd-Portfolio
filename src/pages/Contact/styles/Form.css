@@ -5,3 +5,7 @@
 .submitBtn:active {
   transform: scale(0.96);
 }
+
+.disappear {
+  transform: scale(0);
+}

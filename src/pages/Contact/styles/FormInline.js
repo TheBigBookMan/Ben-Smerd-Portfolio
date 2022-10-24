@@ -20,6 +20,7 @@ export const formStyles = {
     borderRadius: "30px",
     boxShadow: "1px 1px 2px 1px rgba(0, 0, 0, 0.5)",
     cursor: "pointer",
+    transition: "scale 0.5s ease-out",
   },
   formTitles: {
     color: "rgb(46, 94, 176)",

@@ -40,6 +40,8 @@ const Form = () => {
       return;
     }
 
+    // e.target.classList.add("disappear");
+
     setUserName("");
     setEmail("");
     setMessage("");

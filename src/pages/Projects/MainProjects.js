@@ -58,7 +58,7 @@ const MainProjects = () => {
           <h3 style={main.projectsTitle}>Team Profile Generator</h3>
           <div style={main.projectInfoContainer}>
             <small style={main.projectText}>
-              Using NodeJS and Javascript, the user inputs details about their
+              Using NodeJS and OOP, the user inputs details about their
               employees and a HTML and CSS file with the information will be
               created. The user will be able to interact with information such
               as email and github accounts for easy access to contacting the
