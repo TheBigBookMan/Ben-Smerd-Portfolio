@@ -4,6 +4,7 @@ export const bioStyles = {
     width: "900px",
     height: "470px",
     border: "solid rgb(46, 94, 176) 5px",
+    boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.4)",
     borderRadius: "50px",
     padding: "20px",
     backgroundColor: "#fee4ff",

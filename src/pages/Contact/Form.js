@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles/Form.css";
 import validateEmail from "./utils";
-import { formStyles } from "./styles/FormInline";
+import { formStyles as style } from "./styles/FormStyles";
 
 // could make the submit button do some antimation after submitting the form
 // could put in an automatic sender to my email when click submit button
@@ -50,13 +50,13 @@ const Form = () => {
   };
 
   return (
-    <form style={formStyles.formContainer}>
+    <form style={style.formContainer}>
       <label htmlFor="username">
-        <h2 style={formStyles.formTitles}>Name:</h2>
+        <h2 style={style.formTitles}>Name:</h2>
         <br></br>
         <input
           className="inputName"
-          style={formStyles.inputBox}
+          style={style.inputBox}
           value={userName}
           onChange={handleInputChange}
           type="text"
@@ -67,11 +67,11 @@ const Form = () => {
       </label>
 
       <label htmlFor="email">
-        <h2 style={formStyles.formTitles}>Email:</h2>
+        <h2 style={style.formTitles}>Email:</h2>
         <br></br>
         <input
           className="inputEmail"
-          style={formStyles.inputBox}
+          style={style.inputBox}
           value={email}
           onChange={handleInputChange}
           type="email"
@@ -82,11 +82,11 @@ const Form = () => {
       </label>
 
       <label htmlFor="message">
-        <h2 style={formStyles.formTitles}>Message:</h2>
+        <h2 style={style.formTitles}>Message:</h2>
         <br></br>
         <textarea
           className="inputMessage"
-          style={formStyles.messageBox}
+          style={style.messageBox}
           value={message}
           onChange={handleInputChange}
           placeholder="Enter your message"
@@ -99,15 +99,15 @@ const Form = () => {
       {submission ? (
         <button
           className="submitBtn"
-          style={formStyles.submitBox}
+          style={style.submitBox}
           type="submit"
           name="submit"
           onClick={submitForm}
         >
-          <h2 style={formStyles.formTitles}>Submit</h2>
+          <h2 style={style.formTitles}>Submit</h2>
         </button>
       ) : (
-        <h1 style={formStyles.formTitles}>Thank you!</h1>
+        <h1 style={style.formTitles}>Thank you!</h1>
       )}
       {error}
     </form>

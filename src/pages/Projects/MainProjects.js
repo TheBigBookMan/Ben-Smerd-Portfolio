@@ -5,9 +5,6 @@ import TeamProfileGenerator from "../../images/TeamProfileGenerator.png";
 import EmptyYourFridge from "../../images/EmptyYouFridge.png";
 import { mainProjectStyles as main } from "./styles/MainStyles";
 
-// !!! NEED TO REDO UP THE CSS FOR THE EMPLOYEE MANAGER LOOKS SO SHIT
-// NEED TO MAKE THE PROJETS CLICKABLE AND TAKE TO GITHUB REPO
-
 const MainProjects = () => {
   return (
     <div style={main.mainProjectsDisplay}>

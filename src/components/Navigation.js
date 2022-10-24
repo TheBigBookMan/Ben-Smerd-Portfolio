@@ -2,53 +2,36 @@
 
 import React from "react";
 import "../styles/Navigation.css";
+import { navigationStyles as style } from "../styles/NavigationStyle";
 
 // will have to make a utility function for checking window width/size for responsiveness
-const navigationStyles = {
-  navContainer: {
-    width: "500px",
-    marginRight: "20px",
-  },
-  navList: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    listStyleType: "none",
-    fontSize: "1.2rem",
-  },
-  navItem: {
-    cursor: "pointer",
-    textShadow: "2px 2px 2px rgba(0,0,0,0.1)",
-    color: "rgb(46, 94, 176)",
-  },
-};
 
 const Navigation = ({ pageSelected, handlePageChange }) => {
   return (
-    <nav style={navigationStyles.navContainer}>
-      <ul style={navigationStyles.navList}>
+    <nav style={style.navContainer}>
+      <ul style={style.navList}>
         <li
           onClick={() => handlePageChange("AboutMe")}
           className={pageSelected === "AboutMe" ? "active" : ""}
-          style={navigationStyles.navItem}
+          style={style.navItem}
         >
           About Me
         </li>
         <li
           onClick={() => handlePageChange("Projects")}
           className={pageSelected === "Projects" ? "active" : ""}
-          style={navigationStyles.navItem}
+          style={style.navItem}
         >
           Projects
         </li>
         <li
           onClick={() => handlePageChange("Contact")}
           className={pageSelected === "Contact" ? "active" : ""}
-          style={navigationStyles.navItem}
+          style={style.navItem}
         >
           Contact
         </li>
-        <li style={navigationStyles.navItem}>Resume</li>
+        <li style={style.navItem}>Resume</li>
       </ul>
     </nav>
   );

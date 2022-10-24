@@ -3,28 +3,13 @@
 import React from "react";
 import MainProjects from "./MainProjects";
 import SideProjects from "./SideProjects";
-
-const projectStyles = {
-  projectsContainer: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-  },
-  projectsTitle: {
-    fontSize: "2rem",
-    margin: "10px 100px",
-    color: "rgb(18, 49, 101)",
-  },
-  display: {
-    display: "flex",
-  },
-};
+import { projectStyles as style } from "./styles/ProjectStyles";
 
 const Projects = () => {
   return (
-    <div style={projectStyles.projectsContainer}>
-      <h1 style={projectStyles.projectsTitle}>Projects</h1>
-      <div style={projectStyles.display}>
+    <div style={style.projectsContainer}>
+      <h1 style={style.projectsTitle}>Projects</h1>
+      <div style={style.display}>
         <MainProjects />
         <SideProjects />
       </div>
