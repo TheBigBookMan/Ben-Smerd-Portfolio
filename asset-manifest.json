@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ben-smerd-portfolio/static/css/main.12ed56c1.css",
-    "main.js": "/ben-smerd-portfolio/static/js/main.fe1c0859.js",
-    "static/media/Me.jpg": "/ben-smerd-portfolio/static/media/Me.76bee18fe6267657ac28.jpg",
-    "static/media/KryptoHack.png": "/ben-smerd-portfolio/static/media/KryptoHack.122357fe2bc7fb9e97fa.png",
-    "static/media/TeamProfileGenerator.png": "/ben-smerd-portfolio/static/media/TeamProfileGenerator.6b035874677fea0a72be.png",
-    "static/media/close.jpg": "/ben-smerd-portfolio/static/media/close.7f7a3754921056df9501.jpg",
-    "static/media/EmployeeTracker.png": "/ben-smerd-portfolio/static/media/EmployeeTracker.2b1bbe9601a55856ecbe.png",
-    "static/media/EmptyYouFridge.png": "/ben-smerd-portfolio/static/media/EmptyYouFridge.718c5a4ef4fe199f483a.png",
-    "index.html": "/ben-smerd-portfolio/index.html",
-    "main.12ed56c1.css.map": "/ben-smerd-portfolio/static/css/main.12ed56c1.css.map",
-    "main.fe1c0859.js.map": "/ben-smerd-portfolio/static/js/main.fe1c0859.js.map"
+    "main.css": "/Ben-Smerd-Portfolio/static/css/main.12ed56c1.css",
+    "main.js": "/Ben-Smerd-Portfolio/static/js/main.76d8fd68.js",
+    "static/media/Me.jpg": "/Ben-Smerd-Portfolio/static/media/Me.76bee18fe6267657ac28.jpg",
+    "static/media/KryptoHack.png": "/Ben-Smerd-Portfolio/static/media/KryptoHack.122357fe2bc7fb9e97fa.png",
+    "static/media/TeamProfileGenerator.png": "/Ben-Smerd-Portfolio/static/media/TeamProfileGenerator.6b035874677fea0a72be.png",
+    "static/media/close.jpg": "/Ben-Smerd-Portfolio/static/media/close.7f7a3754921056df9501.jpg",
+    "static/media/EmployeeTracker.png": "/Ben-Smerd-Portfolio/static/media/EmployeeTracker.2b1bbe9601a55856ecbe.png",
+    "static/media/EmptyYouFridge.png": "/Ben-Smerd-Portfolio/static/media/EmptyYouFridge.718c5a4ef4fe199f483a.png",
+    "index.html": "/Ben-Smerd-Portfolio/index.html",
+    "main.12ed56c1.css.map": "/Ben-Smerd-Portfolio/static/css/main.12ed56c1.css.map",
+    "main.76d8fd68.js.map": "/Ben-Smerd-Portfolio/static/js/main.76d8fd68.js.map"
   },
   "entrypoints": [
     "static/css/main.12ed56c1.css",
-    "static/js/main.fe1c0859.js"
+    "static/js/main.76d8fd68.js"
   ]
 }
