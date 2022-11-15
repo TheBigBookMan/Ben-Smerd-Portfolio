@@ -2,7 +2,7 @@
 
 // this will be deteremined by the state of what is clicked in the navigation passed through as props
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AboutMe from "../pages/AboutMe/AboutMe";
 import Contact from "../pages/Contact/Contact";
 import Projects from "../pages/Projects/Projects";

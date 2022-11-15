@@ -1,5 +1,5 @@
 import React from "react";
-import KryptoHack from "../../images/KryptoHack.png";
+import CoinCharter from "../../images/CoinCharter.png";
 import EmployeeTracker from "../../images/EmployeeTracker.png";
 import TeamProfileGenerator from "../../images/TeamProfileGenerator.png";
 import EmptyYourFridge from "../../images/EmptyYouFridge.png";
@@ -14,20 +14,20 @@ const MainProjects = () => {
       </h2>
       <ul style={main.projectContainer}>
         <li style={main.project}>
-          <h3 style={main.projectsTitle}>KryptoHack</h3>
+          <h3 style={main.projectsTitle}>CoinCharter</h3>
           <div style={main.projectInfoContainer}>
             <small style={main.projectText}>
-              This is a crypto coin app that uses Javascript, NodeJS, MySql,
+              This is a crypto coin app that uses Javascript, NodeJS, MOngoDB,
               ExpressJS and a coingeko crypto third party API. I worked
-              collaboratively in a team as project manager and mainly worked on
-              the database, routes and logic.
+              collaboratively in a team and mainly worked on the database,
+              routes and logic.
             </small>
             <img
               onClick={() =>
-                window.open("https://github.com/Canon70D/KryptoHack")
+                window.open("https://coin-charter-au.herokuapp.com/")
               }
-              src={KryptoHack}
-              alt="KryptoHack"
+              src={CoinCharter}
+              alt="CoinCharter"
               style={main.image}
             />
           </div>
